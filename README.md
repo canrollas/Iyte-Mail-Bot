@@ -18,17 +18,17 @@
     
         def database_fetcher(db_name):
 
-        con = sqlite3.connect(db_name) 
+            con = sqlite3.connect(db_name) 
 
-        cursor = con.cursor() 
+            cursor = con.cursor() 
 
-        cursor.execute("SELECT * from 'users' ")
-        
-        users=cursor.fetchall()
+            cursor.execute("SELECT * from 'users' ")
 
-        cursor.close()
+            users=cursor.fetchall()
 
-        return users
+            cursor.close()
+
+            return users
 ```
 ## Licence & copyright
 
